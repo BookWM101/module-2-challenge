@@ -1,0 +1,9 @@
+html {
+  margin: 0 auto;
+  background-color: tan;
+  padding: 10px;
+}
+
+header.h1.ul {
+  display: inline;
+}
