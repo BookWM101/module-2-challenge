@@ -1,9 +1,118 @@
-html {
-  margin: 0 auto;
-  background-color: tan;
-  padding: 10px;
+:root {
+  --header-bg-color: #add8e6;
+  --header-text-color: black;
+  --content-bg-color: white;
+  --content-text-color: black;
+  --footer-bg-color: #1e3a8a;
+  --footer-text-color: white;
 }
 
-header.h1.ul {
-  display: inline;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--content-text-color);
+  background-color: var(--content-bg-color);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--header-text-color);
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header img.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+
+main {
+  padding: 40px 20px;
+  flex-grow: 1; /* Expand to fill the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  margin-bottom: 50px;
+  text-align: center; /* Center the section titles */
+}
+
+.works-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.work-item img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.work-item.large img {
+  max-width: 300px;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  header .container {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  .works-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
