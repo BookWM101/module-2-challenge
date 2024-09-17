@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>/*page-title*/</title>
-  <link rel="stylesheet" href="assets\css\style.css" /> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayla's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./assets/images/pidge.png" alt="Kayla's Avatar" class="avatar">
+            <h1>Kayla</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
- <body>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm Kayla, a passionate web developer student learning full-stack web development! I am currently 21 years old, I love to read, and I also love to learn! Welcome to my portfolio!</p>
+        </section>
 
-  <header>
-    <h1>Kayla Flint</h1>
-    <h1>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </h1>
-  </header>
+        <section id="works">
+            <h2>My Work</h2>
+            <div class="works-container">
+                <div class="work-item">
+                    <a href="https://github.com/BookWM101/module-1-challenge.git">
+                        <img src="./assets/images/githubSymbol.svg" alt="First Application">
+                        <h3>Simple Webpage using HTML and CSS</h3>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://github.com/BookWM101/challenge-3">
+                        <img src="./assets/images/githubSymbol.svg" alt="Second Application">
+                        <h3>Employee Payroll Tracker using Node.js</h3>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://github.com/BookWM101/challenge-4">
+                        <img src="./assets/images/githubSymbol.svg" alt="Third Application">
+                        <h3>2 Page Blog Site</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <img class="image" src="assets\images\IMG_20210829_131908~2 (1).jpg" alt="Young woman smiling on forest trail."/>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me at <a href="https://github.com/BookWM101">Github</a>.</p>
+        </section>
+    </main>
 
-  <section id="about">
-    <h3>all about me...</h3>
-  </section>
-
-  <section id="portfolio">
-    <div class="1">
-        <img src="assets\images\IMG_20210829_131908~2 (1).jpg" alt="Young woman smiling on forest trail."/>
-    </div>
-  </section>
-
-  <section id="contact">
-    <ul>
-        <li><label for="name">Name:</label> <input id="name" type="text" placeholder="first and last name" /></li>
-        <li><label for="email">Email:</label> <input id="email" type="email" placeholder="@gmail.com" /></li>
-        <li><textarea id="thoughts" placeholder="Write here!"></textarea></li>
-    </ul>
-  </section>
-
-  <footer>
-    <h4>@2024 Flint Productions.</h4>
-  </footer>
-
- </body>
-
+    <footer>
+        <p>Kayla's Portfolio &copy; 2024</p>
+    </footer>
+  </body>
 </html>
